@@ -16,37 +16,116 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="nav-overlay" id="nav-overlay" hidden></div>
   <header class="header" id="header">
-    <div class="nav-inner">
-      <a class="brand" href="#top">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.4 2.2 1.6 3.8 3.4 5.1-.8.3-1.6.8-2.2 1.5 1.8-.1 3.5.4 4.8 1.6-1.6.6-2.8 1.6-3.6 3 .9.1 1.8.5 2.6 1.1-2 .9-3.3 2.2-3.9 3.8.7 0 1.3.2 1.9.5-1.5 1.2-2.5 2.6-3 4.4-.5-1.8-1.5-3.2-3-4.4.6-.3 1.2-.5 1.9-.5-.6-1.6-1.9-2.9-3.9-3.8.8-.6 1.7-1 2.6-1.1-.8-1.4-2-2.4-3.6-3 1.3-1.2 3-1.7 4.8-1.6-.6-.7-1.4-1.2-2.2-1.5C10.4 5.8 11.6 4.2 12 2z"/></svg>
-        </span>
-        <span class="brand-text">
-          <span class="brand-name">Toronto Maple Dental | 枫华牙科</span>
-        </span>
-      </a>
+    <div class="palate">
+      <div class="nav-inner">
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.4 2.2 1.6 3.8 3.4 5.1-.8.3-1.6.8-2.2 1.5 1.8-.1 3.5.4 4.8 1.6-1.6.6-2.8 1.6-3.6 3 .9.1 1.8.5 2.6 1.1-2 .9-3.3 2.2-3.9 3.8.7 0 1.3.2 1.9.5-1.5 1.2-2.5 2.6-3 4.4-.5-1.8-1.5-3.2-3-4.4.6-.3 1.2-.5 1.9-.5-.6-1.6-1.9-2.9-3.9-3.8.8-.6 1.7-1 2.6-1.1-.8-1.4-2-2.4-3.6-3 1.3-1.2 3-1.7 4.8-1.6-.6-.7-1.4-1.2-2.2-1.5C10.4 5.8 11.6 4.2 12 2z"/></svg>
+          </span>
+          <span class="brand-text">
+            <span class="brand-name">Toronto Maple Dental | 枫华牙科</span>
+          </span>
+        </a>
 
-      <nav class="nav-links" id="nav-links">
-        <a href="#top"><span class="en">Home</span><span class="zh">首页</span></a>
-        <a href="#about"><span class="en">About</span><span class="zh">关于我们</span></a>
-        <a href="#services"><span class="en">Services</span><span class="zh">服务项目</span></a>
-        <a href="#contact"><span class="en">Contact</span><span class="zh">联系我们</span></a>
-      </nav>
-
-      <div class="nav-actions">
-        <div class="lang-toggle" role="group" aria-label="Language">
-          <button type="button" data-lang="en" aria-pressed="true">EN</button>
-          <button type="button" data-lang="zh" aria-pressed="false">中文</button>
+        <div class="nav-actions">
+          <div class="lang-toggle" role="group" aria-label="Language">
+            <button type="button" data-lang="en" aria-pressed="true">EN</button>
+            <button type="button" data-lang="zh" aria-pressed="false">中文</button>
+          </div>
         </div>
-        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
-          <span class="burger"></span>
-          <span class="en visually-hidden">Open Menu</span>
-          <span class="zh visually-hidden">Open Menu</span>
-        </button>
       </div>
     </div>
+
+    <nav class="smile-nav" id="nav-links" aria-label="Primary">
+      <svg class="smile-art" viewBox="0 0 800 220" role="presentation">
+        <defs>
+          <linearGradient id="enamelFill" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#ffffff"/>
+            <stop offset="100%" stop-color="#f6f1e8"/>
+          </linearGradient>
+          <linearGradient id="enamelMuted" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#e4e0d8"/>
+            <stop offset="100%" stop-color="#d2cdc4"/>
+          </linearGradient>
+          <linearGradient id="enamelMutedFar" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#d4d0c8"/>
+            <stop offset="100%" stop-color="#c2bdb5"/>
+          </linearGradient>
+          <linearGradient id="enamelLower" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#f2eee6"/>
+            <stop offset="100%" stop-color="#ddd7ce"/>
+          </linearGradient>
+          <clipPath id="mouthOpen">
+            <path d="M130 100 C210 86 290 108 400 110 C510 108 590 86 670 100 C620 144 530 170 400 172 C270 170 180 144 130 100 Z"/>
+          </clipPath>
+          <linearGradient id="gumFill" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#f3c7c0"/>
+            <stop offset="100%" stop-color="#e8a399"/>
+          </linearGradient>
+          <linearGradient id="lipFill" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#ef9d94"/>
+            <stop offset="45%" stop-color="#dd6f68"/>
+            <stop offset="100%" stop-color="#c25550"/>
+          </linearGradient>
+          <linearGradient id="lipGloss" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.42"/>
+            <stop offset="60%" stop-color="#ffffff" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+
+        <path class="lip-lower" fill="url(#lipFill)" d="M86 92 C160 128 250 164 400 172 C550 164 640 128 714 92 C660 176 540 214 400 218 C260 214 140 176 86 92 Z"/>
+        <path class="lip-lower-gloss" fill="url(#lipGloss)" d="M180 168 C260 186 330 196 400 198 C470 196 540 186 620 168 C540 188 470 196 400 198 C330 196 260 188 180 168 Z"/>
+
+        <g clip-path="url(#mouthOpen)">
+          <g class="teeth-lower" aria-hidden="true">
+            <path class="tooth-far" d="M216 176 H260 V160 Q260 152 252 152 H224 Q216 152 216 160 Z"/>
+            <path d="M262 178 H308 V158 Q308 149 300 149 H270 Q262 149 262 158 Z"/>
+            <path d="M310 179 H356 V156 Q356 147 348 147 H318 Q310 147 310 156 Z"/>
+            <path d="M358 180 H398 V154 Q398 145 390 145 H366 Q358 145 358 154 Z"/>
+            <path d="M400 180 H442 V154 Q442 145 434 145 H408 Q400 145 400 154 Z"/>
+            <path d="M444 179 H490 V156 Q490 147 482 147 H452 Q444 147 444 156 Z"/>
+            <path d="M492 178 H538 V158 Q538 149 530 149 H500 Q492 149 492 158 Z"/>
+            <path class="tooth-far" d="M540 176 H584 V160 Q584 152 576 152 H548 Q540 152 540 160 Z"/>
+          </g>
+
+          <g class="teeth-muted" aria-hidden="true">
+            <path class="tooth-far" d="M148 84 H186 V128 Q186 138 176 138 H158 Q148 138 148 128 Z"/>
+            <path class="tooth-mid" d="M188 78 H230 V142 Q230 154 218 154 H200 Q188 154 188 142 Z"/>
+            <path class="tooth-mid" d="M232 76 H266 V150 Q266 162 254 162 H244 Q232 162 232 150 Z"/>
+            <path class="tooth-mid" d="M540 76 H574 V150 Q574 162 562 162 H552 Q540 162 540 150 Z"/>
+            <path class="tooth-mid" d="M576 78 H618 V142 Q618 154 606 154 H588 Q576 154 576 142 Z"/>
+            <path class="tooth-far" d="M620 84 H658 V128 Q658 138 648 138 H630 Q620 138 620 128 Z"/>
+          </g>
+
+          <a class="tooth-link is-active" href="#top" data-section="top" aria-current="true">
+            <path d="M268 74 H334 V154 Q334 168 320 168 H282 Q268 168 268 154 Z"/>
+            <text class="en" x="301" y="140">Home</text>
+            <text class="zh" x="301" y="140">首页</text>
+          </a>
+          <a class="tooth-link" href="#about" data-section="about">
+            <path d="M336 74 H402 V154 Q402 168 388 168 H350 Q336 168 336 154 Z"/>
+            <text class="en" x="369" y="140">About</text>
+            <text class="zh" x="369" y="140">关于</text>
+          </a>
+          <a class="tooth-link" href="#services" data-section="services">
+            <path d="M404 74 H470 V154 Q470 168 456 168 H418 Q404 168 404 154 Z"/>
+            <text class="en" x="437" y="140">Services</text>
+            <text class="zh" x="437" y="140">服务</text>
+          </a>
+          <a class="tooth-link" href="#contact" data-section="contact">
+            <path d="M472 74 H538 V154 Q538 168 524 168 H486 Q472 168 472 154 Z"/>
+            <text class="en" x="505" y="140">Contact</text>
+            <text class="zh" x="505" y="140">联系</text>
+          </a>
+
+          <path class="gums" fill="url(#gumFill)" d="M150 72 C240 86 310 90 400 90 C490 90 560 86 650 72 V96 C560 108 490 112 400 112 C310 112 240 108 150 96 Z"/>
+        </g>
+        <path class="lip-upper" fill="url(#lipFill)" d="M86 92 C150 64 228 24 310 20 C348 18 376 36 400 30 C424 36 452 18 490 20 C572 24 650 64 714 92 C650 106 560 114 400 112 C240 114 150 106 86 92 Z"/>
+        <path class="lip-roll" d="M128 82 C190 46 262 22 336 22 C368 22 388 40 400 42 C412 40 432 22 464 22 C538 22 610 46 672 82"/>
+        <path class="lip-gloss" fill="url(#lipGloss)" d="M200 54 C268 30 332 34 368 48 C386 56 400 44 400 42 C400 44 414 56 432 48 C468 34 532 30 600 54 C528 36 462 32 432 46 C414 54 400 38 400 38 C400 38 386 54 368 46 C338 32 272 36 200 54 Z"/>
+      </svg>
+    </nav>
   </header>
 
   <main id="main">
@@ -304,15 +383,8 @@
   <script>
     const root = document.documentElement;
     const header = document.getElementById("header");
-    const menuToggle = document.getElementById("menu-toggle");
-    const navOverlay = document.getElementById("nav-overlay");
     const mapFrame = document.querySelector(".map-frame iframe");
-
-    const setMenu = (open) => {
-      document.body.classList.toggle("nav-open", open);
-      menuToggle.setAttribute("aria-expanded", String(open));
-      navOverlay.hidden = !open;
-    };
+    const teeth = [...document.querySelectorAll(".smile-nav .tooth-link")];
 
     const setLang = (lang) => {
       root.lang = lang;
@@ -332,23 +404,35 @@
       button.addEventListener("click", () => setLang(button.dataset.lang));
     });
 
-    menuToggle.addEventListener("click", () => {
-      setMenu(!document.body.classList.contains("nav-open"));
-    });
+    const setActiveTooth = (id) => {
+      teeth.forEach((tooth) => {
+        const active = tooth.dataset.section === id;
+        tooth.classList.toggle("is-active", active);
+        if (active) tooth.setAttribute("aria-current", "true");
+        else tooth.removeAttribute("aria-current");
+      });
+    };
 
-    navOverlay.addEventListener("click", () => setMenu(false));
+    const sectionIds = ["top", "welcome", "about", "services", "contact"];
+    const observed = sectionIds
+      .map((id) => document.getElementById(id))
+      .filter(Boolean);
 
-    document.getElementById("nav-links").addEventListener("click", (event) => {
-      if (event.target.closest("a")) setMenu(false);
-    });
-
-    window.addEventListener("keydown", (event) => {
-      if (event.key === "Escape") setMenu(false);
-    });
-
-    window.addEventListener("resize", () => {
-      if (window.innerWidth > 900) setMenu(false);
-    });
+    if (observed.length && "IntersectionObserver" in window) {
+      const observer = new IntersectionObserver((entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (visible) {
+          const id = visible.target.id === "welcome" ? "top" : visible.target.id;
+          setActiveTooth(id);
+        }
+      }, {
+        rootMargin: "-28% 0px -55% 0px",
+        threshold: [0.1, 0.25, 0.5],
+      });
+      observed.forEach((section) => observer.observe(section));
+    }
 
     const onScroll = () => header.classList.toggle("is-scrolled", window.scrollY > 8);
     onScroll();
