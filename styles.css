@@ -1,20 +1,20 @@
 :root {
-  --bg: #f4efe6;
-  --bg-deep: #ece4d6;
-  --paper: #fffaf2;
-  --ink: #1c2a24;
-  --ink-soft: #4d5c54;
-  --muted: #6d7871;
-  --line: #d9cdba;
-  --maple: #8c3a2a;
-  --maple-deep: #6e2c20;
-  --gold: #b8915a;
-  --gold-soft: #e8d3ae;
-  --forest: #234037;
-  --forest-deep: #162821;
-  --sage: #3f6658;
-  --shadow: 0 18px 50px rgba(28, 42, 36, 0.1);
-  --shadow-soft: 0 8px 24px rgba(28, 42, 36, 0.06);
+  --bg: #eaf7fc;
+  --bg-deep: #d8eef7;
+  --paper: #ffffff;
+  --ink: #173042;
+  --ink-soft: #456271;
+  --muted: #718995;
+  --line: #c6e0ea;
+  --maple: #d34b52;
+  --maple-deep: #ad303b;
+  --gold: #5da9c6;
+  --gold-soft: #b9e2ef;
+  --forest: #2f7892;
+  --forest-deep: #17495d;
+  --sage: #69aabd;
+  --shadow: 0 18px 50px rgba(23, 48, 66, 0.1);
+  --shadow-soft: 0 8px 24px rgba(23, 48, 66, 0.07);
   --radius: 22px;
   --radius-sm: 14px;
   --header: 76px;
@@ -43,8 +43,8 @@ body {
   margin: 0;
   color: var(--ink);
   background:
-    radial-gradient(1200px 500px at 10% -10%, rgba(184, 145, 90, 0.16), transparent 50%),
-    radial-gradient(900px 480px at 100% 0%, rgba(35, 64, 55, 0.1), transparent 45%),
+    radial-gradient(1200px 500px at 10% -10%, rgba(93, 169, 198, 0.2), transparent 50%),
+    radial-gradient(900px 480px at 100% 0%, rgba(105, 170, 189, 0.14), transparent 45%),
     var(--bg);
   font-family: var(--font-body);
   font-size: 1.05rem;
@@ -135,7 +135,7 @@ html[lang="zh"] .en {
   position: fixed;
   inset: 0;
   z-index: 30;
-  background: rgba(18, 28, 24, 0.35);
+  background: rgba(23, 48, 66, 0.35);
 }
 
 .nav-overlay[hidden] {
@@ -147,7 +147,7 @@ html[lang="zh"] .en {
   top: 0;
   z-index: 40;
   min-height: var(--header);
-  background: rgba(244, 239, 230, 0.86);
+  background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid transparent;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
@@ -178,8 +178,8 @@ html[lang="zh"] .en {
   height: 42px;
   flex: none;
   border-radius: 50%;
-  background: linear-gradient(160deg, #9a4633, #6a2b1f);
-  color: #f8e7c8;
+  background: linear-gradient(160deg, #e16468, #b83240);
+  color: #ffffff;
   display: grid;
   place-items: center;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
@@ -257,7 +257,7 @@ html[lang="zh"] .en {
 
 .lang-toggle button[aria-pressed="true"] {
   background: var(--forest);
-  color: #f7f1e6;
+  color: #f2fbfe;
 }
 
 .menu-toggle {
@@ -303,7 +303,7 @@ html[lang="zh"] .en {
   display: grid;
   place-items: center;
   overflow: hidden;
-  color: #f7f1e6;
+  color: #f2fbfe;
 }
 
 .hero-media {
@@ -323,8 +323,8 @@ html[lang="zh"] .en {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(18, 28, 24, 0.28), rgba(18, 28, 24, 0.72)),
-    radial-gradient(circle at 20% 20%, rgba(140, 58, 42, 0.28), transparent 40%);
+    linear-gradient(180deg, rgba(23, 48, 66, 0.2), rgba(23, 48, 66, 0.7)),
+    radial-gradient(circle at 20% 20%, rgba(93, 169, 198, 0.28), transparent 40%);
 }
 
 .hero-content {
@@ -405,7 +405,7 @@ html[lang="zh"] .en {
 
 .services {
   background:
-    linear-gradient(180deg, transparent, rgba(236, 228, 214, 0.7) 12%, rgba(236, 228, 214, 0.7) 88%, transparent);
+    linear-gradient(180deg, transparent, rgba(216, 238, 247, 0.72) 12%, rgba(216, 238, 247, 0.72) 88%, transparent);
 }
 
 .service-grid {
@@ -521,7 +521,7 @@ html[lang="zh"] .en {
   grid-template-columns: 0.9fr 1.1fr;
   gap: 1.2rem;
   background: var(--forest-deep);
-  color: #f4ece0;
+  color: #f2fbfe;
   border-radius: 28px;
   padding: 2rem;
   box-shadow: var(--shadow);
@@ -532,11 +532,11 @@ html[lang="zh"] .en {
 }
 
 .contact-panel .lede {
-  color: #f4ece0;
+  color: #f2fbfe;
 }
 
 .contact-panel p {
-  color: rgba(244, 236, 224, 0.8);
+  color: rgba(242, 251, 254, 0.8);
 }
 
 .contact-methods {
@@ -546,14 +546,14 @@ html[lang="zh"] .en {
 }
 
 .contact-card {
-  background: rgba(255, 250, 242, 0.06);
-  border-color: rgba(232, 211, 174, 0.18);
-  color: #f7f1e6;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(185, 226, 239, 0.28);
+  color: #f2fbfe;
   padding: 1.1rem 1rem;
 }
 
 .contact-card p {
-  color: #f7f1e6;
+  color: #f2fbfe;
 }
 
 .contact-card a:hover,
@@ -562,8 +562,8 @@ html[lang="zh"] .en {
 }
 
 .footer {
-  background: #121c18;
-  color: #d8d0c4;
+  background: #103747;
+  color: #c7e5ee;
   padding: 2rem 0;
   font-size: 0.92rem;
 }
@@ -582,7 +582,7 @@ html[lang="zh"] .en {
 
 .footer a:hover,
 .footer a:focus-visible {
-  color: #f4ece0;
+  color: #e9f8fc;
 }
 
 @media (max-width: 900px) {
